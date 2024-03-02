@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    
+    <main class="main">
+        <h1>Clima</h1>
+
+        <form class="busca">
+            <input type="search" id="searchInput" placeholder="Nome da cidade">
+            <button>Buscar</button>
+        </form>
+
+        <div class="resultado">
+            <div class="titulo">Indaiatuba, BR</div>
+
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">23.4<sup>ºC</sup></div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+            </div>
+
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">5.14<span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aviso">Carregando...</div>
+    </main>
+
+    <footer class="footer">
+        Feito por <a href="https://github.com/Vinitoider" target="_blank">Vinícius</a>
+    </footer>
 </body>
 </html>
