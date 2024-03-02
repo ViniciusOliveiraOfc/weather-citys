@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cinza: rgba(255, 255, 255, 0.5);
+    --preto: #000000;
+    --branco: #ffffff;
+    --fundo: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-30deg, rgba(94,0,255,1) 0%, rgba(127,205,255,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass';
+    font-size: 1.2rem;
+    color: var(--branco);
+}
+
+.tituloMain {
+    color: var(--branco);
+}
+
+.busca input {
+    border: none;
+    border-radius: .7rem;
+    padding: .7rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+ .busca button {
+    background: var(--fundo);
+    color: var(--branco);
+    border: none;
+    border-radius: .7rem;
+    padding: .7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.busca button:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.resultado {
+    background: var(--fundo);
+    /* display: none; */
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .7rem;
+}
+
+.info {
+    display: flex;
+}
+
+.temp,
+.vento {
+    flex: 1;
+    color: var(--cinza);
+}
+
+.tempInfo,
+.ventoInfo {
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tempInfo sup,
+.ventoInfo span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.aviso img {
+    width: 2rem;
+}
+
+.footer {
+    color: var(--cinza);
+}
+
+.footer a {
+    color: var(--branco);
+    position: relative;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    text-shadow: .1rem .1rem 1rem var(--preto);
+}
+
+.footer a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--branco);
+    transform: scaleX(0);
+    transition: .2s;
+}
+
+.footer a:hover::before {
+    transform: scaleX(1);
+}
