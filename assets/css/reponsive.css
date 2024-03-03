@@ -1,0 +1,14 @@
+@media (max-width: 375px) {
+    .main {
+        width: 90%;
+    }
+    .busca {
+        width: 100%;
+    }
+    .busca input {
+        width: 70%;
+    }
+    .busca button {
+        width: 27%;
+    }
+}
