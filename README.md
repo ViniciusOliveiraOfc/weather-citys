@@ -1,4 +1,4 @@
-# Blue Lock Characters Showcase
+# Weather Citys
 Demo Image:
 ![image](https://github.com/Vinitoider/weather-citys/assets/136126554/7db89595-89f1-4304-834b-3c6328f81caa)
 
